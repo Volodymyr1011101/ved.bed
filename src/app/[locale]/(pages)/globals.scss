@@ -3,11 +3,28 @@
 @tailwind utilities;
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
-body, html {
-    scroll-behavior: smooth;
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+button {
+  &:disabled {
+    background-color: red;
+  }
 }
